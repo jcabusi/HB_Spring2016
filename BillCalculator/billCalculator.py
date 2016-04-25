@@ -7,10 +7,10 @@
 # Use the variable to calculate the tip.
 # (Part 2): Fix any bugs and make it work!
 
-bill = raw_input("How much was your bill?")
-
-tip = bill * .18
+bill = float(input("How much was your bill?"))
+how_much = float(input("How much tip do you want to put? Please put only whole numbers."))
+tip = bill * (how_much/100)
 
 total_bill = bill + tip
 
-print "The tip is %f and the total bill is %f ." % (tip, total_bill)
+print "The tip is %f and the total bill is %f ." % (how_much, total_bill)
